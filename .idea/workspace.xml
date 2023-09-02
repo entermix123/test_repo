@@ -11,7 +11,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/petstagram_latest" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
@@ -149,8 +152,33 @@
       <workItem from="1693641155662" duration="43000" />
       <workItem from="1693641313270" duration="878000" />
       <workItem from="1693645268717" duration="2457000" />
-      <workItem from="1693647782233" duration="2177000" />
+      <workItem from="1693647782233" duration="3318000" />
     </task>
+    <task id="LOCAL-00001" summary="before deploy">
+      <option name="closed" value="true" />
+      <created>1693651327474</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693651327475</updated>
+    </task>
+    <task id="LOCAL-00002" summary="some updates">
+      <option name="closed" value="true" />
+      <created>1693651495031</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693651495031</updated>
+    </task>
+    <task id="LOCAL-00003" summary="remove env.prod">
+      <option name="closed" value="true" />
+      <created>1693651573865</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1693651573865</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +186,12 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="before deploy" />
+    <MESSAGE value="some updates" />
+    <MESSAGE value="remove env.prod" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove env.prod" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/test_repo$settings.coverage" NAME="settings Coverage Results" MODIFIED="1693510550030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/petstagram_latest/petstagram_latest" />
