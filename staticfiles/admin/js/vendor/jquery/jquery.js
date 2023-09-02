@@ -9125,7 +9125,7 @@ var
 
 originAnchor.href = location.href;
 
-// base "constructor" for jQuery.ajaxPrefilter and jQuery.ajaxTransport
+// Base "constructor" for jQuery.ajaxPrefilter and jQuery.ajaxTransport
 function addToPrefiltersOrTransports( structure ) {
 
 	// dataTypeExpression is optional and defaults to "*"
@@ -9159,7 +9159,7 @@ function addToPrefiltersOrTransports( structure ) {
 	};
 }
 
-// base inspection function for prefilters and transports
+// Base inspection function for prefilters and transports
 function inspectPrefiltersOrTransports( structure, options, originalOptions, jqXHR ) {
 
 	var inspected = {},
@@ -10518,7 +10518,7 @@ jQuery.offset = {
 			curElem = jQuery( elem ),
 			props = {};
 
-		// Set position first, in-case top/left are set even on staticfiles elem
+		// Set position first, in-case top/left are set even on static elem
 		if ( position === "static" ) {
 			elem.style.position = "relative";
 		}

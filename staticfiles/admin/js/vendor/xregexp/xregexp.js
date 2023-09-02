@@ -396,7 +396,7 @@ module.exports = function(XRegExp) {
 
 },{}],3:[function(require,module,exports){
 /*!
- * XRegExp Unicode base 3.2.0
+ * XRegExp Unicode Base 3.2.0
  * <xregexp.com>
  * Steven Levithan (c) 2008-2017 MIT License
  */
@@ -412,7 +412,7 @@ module.exports = function(XRegExp) {
      * - Adds flag A (astral), which enables 21-bit Unicode support.
      * - Adds the `XRegExp.addUnicodeData` method used by other addons to provide character data.
      *
-     * Unicode base relies on externally provided Unicode character data. Official addons are
+     * Unicode Base relies on externally provided Unicode character data. Official addons are
      * available to provide data for Unicode categories, scripts, blocks, and properties.
      *
      * @requires XRegExp
@@ -674,11 +674,11 @@ module.exports = function(XRegExp) {
      *
      * Uses Unicode 9.0.0.
      *
-     * @requires XRegExp, Unicode base
+     * @requires XRegExp, Unicode Base
      */
 
     if (!XRegExp.addUnicodeData) {
-        throw new ReferenceError('Unicode base must be loaded before Unicode Blocks');
+        throw new ReferenceError('Unicode Base must be loaded before Unicode Blocks');
     }
 
     XRegExp.addUnicodeData([
@@ -1796,11 +1796,11 @@ module.exports = function(XRegExp) {
      *
      * Uses Unicode 9.0.0.
      *
-     * @requires XRegExp, Unicode base
+     * @requires XRegExp, Unicode Base
      */
 
     if (!XRegExp.addUnicodeData) {
-        throw new ReferenceError('Unicode base must be loaded before Unicode Categories');
+        throw new ReferenceError('Unicode Base must be loaded before Unicode Categories');
     }
 
     XRegExp.addUnicodeData([
@@ -2063,11 +2063,11 @@ module.exports = function(XRegExp) {
      *
      * Uses Unicode 9.0.0.
      *
-     * @requires XRegExp, Unicode base
+     * @requires XRegExp, Unicode Base
      */
 
     if (!XRegExp.addUnicodeData) {
-        throw new ReferenceError('Unicode base must be loaded before Unicode Properties');
+        throw new ReferenceError('Unicode Base must be loaded before Unicode Properties');
     }
 
     var unicodeData = [
@@ -2141,11 +2141,11 @@ module.exports = function(XRegExp) {
      *
      * Uses Unicode 9.0.0.
      *
-     * @requires XRegExp, Unicode base
+     * @requires XRegExp, Unicode Base
      */
 
     if (!XRegExp.addUnicodeData) {
-        throw new ReferenceError('Unicode base must be loaded before Unicode Scripts');
+        throw new ReferenceError('Unicode Base must be loaded before Unicode Scripts');
     }
 
     XRegExp.addUnicodeData([
@@ -3212,7 +3212,7 @@ function runTokens(pattern, flags, pos, scope, context) {
 /**
  * Enables or disables implicit astral mode opt-in. When enabled, flag A is automatically added to
  * all new regexes created by XRegExp. This causes an error to be thrown when creating regexes if
- * the Unicode base addon is not available, since flag A is registered by that addon.
+ * the Unicode Base addon is not available, since flag A is registered by that addon.
  *
  * @private
  * @param {Boolean} on `true` to enable; `false` to disable.
@@ -3277,7 +3277,7 @@ function toObject(value) {
  *     - `n` - explicit capture
  *     - `s` - dot matches all (aka singleline)
  *     - `x` - free-spacing and line comments (aka extended)
- *     - `A` - astral (requires the Unicode base addon)
+ *     - `A` - astral (requires the Unicode Base addon)
  *   Flags cannot be provided when constructing one `RegExp` from another.
  * @returns {RegExp} Extended regular expression object.
  * @example
@@ -3305,7 +3305,7 @@ function XRegExp(pattern, flags) {
     flags = flags === undefined ? '' : String(flags);
 
     if (XRegExp.isInstalled('astral') && flags.indexOf('A') === -1) {
-        // This causes an error to be thrown if the Unicode base addon is not available
+        // This causes an error to be thrown if the Unicode Base addon is not available
         flags += 'A';
     }
 
@@ -3391,7 +3391,7 @@ XRegExp.prototype = new RegExp();
  * The XRegExp version number as a string containing three dot-separated parts. For example,
  * '2.0.0-beta-3'.
  *
- * @staticfiles
+ * @static
  * @memberOf XRegExp
  * @type String
  */
